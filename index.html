@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hotel Sea Green</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <!-- fontawesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- own css  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- header design -->
+    <header>
+      <nav class="navbar navbar-expand-lg navigation-wrap">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <h5>HOTEL.</h5>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rooms">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#price">Price</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-btn" href="#book">Book now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner section -->
+    
+    <section id="home" class="sunset-banner p-0">
+        <div class="swiper sunset-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/slider/slider1.jpg');">
+                    <div class="sunset-slide-caption text-center">
+                        <div>
+                            <h1>Welcome to Sunset Resort</h1>
+                            <p>Experience luxury and relaxation at Sunset Resort. Enjoy our beautiful rooms and exceptional services in a serene environment.</p>
+                            <div class="mt-5">
+                                <a href="#" class="main-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/slider/slider2.jpg');">
+                    <div class="sunset-slide-caption text-center">
+                        <div>
+                            <h1>Discover Sunset Resort</h1>
+                            <p>Your perfect getaway awaits at Sunset Resort. Immerse yourself in comfort and elegance with our top-notch amenities.</p>
+                            <div class="mt-5">
+                                <a href="#" class="main-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination sunset-swiper-pagination"></div>
+        </div>
+        <div class="container sunset-booking-area">
+            <form class="row">
+              <div class="col-lg mb-3 mb-lg-0">
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="Check-in Date"
+                />
+              </div>
+              <div class="col-lg mb-3 mb-lg-0">
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="Check-out Date"
+                />
+              </div>
+              <div class="col-lg mb-3 mb-lg-0">
+                <select class="form-select">
+                  <option selected>Adults</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="col-lg mb-3 mb-lg-0">
+                <select class="form-select">
+                  <option selected>Children</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="col-lg mb-3 mb-lg-0">
+                <button type="submit" class="main-btn rounded-2 px-lg-3">
+                  Check Availability
+                </button>
+              </div>
+            </form>
+          </div>
+    </section>
+    <!-- section about -2   -->
+    <section id="about" class="sunset-resort-about-wrapper">
+      <div class="container">
+          <div class="row flex-lg-row flex-column-reverse">
+              <div class="col-lg-6 text-lg-center  text-lg-start">
+                  <h2>Welcome to <span>Sunset Resort </span> <br class="d-none d-lg-block">
+                          the perfect getaway</h2>
+                  <p>Experience unparalleled luxury and relaxation at Sunset Resort. Our world-class amenities and exceptional service ensure a memorable stay. From stunning views to exquisite dining, every detail is designed with your comfort in mind.</p>
+                  <p>Discover the serenity of our beautifully landscaped grounds and indulge in a range of activities tailored to your preferences. At Sunset Resort, your perfect escape awaits.</p>
+                  <a href="#" class="main-btn mt-4">Explore</a>
+              </div>
+              <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+                  <img decoding="async" src="images/about/about.jpg" class="img-fluid" alt="Sunset Resort">
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+     <!-- Rooms section -->
+<section id="rooms" class="sunset_resort_rooms_wrapper">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+              <h4>What we offer</h4>
+              <h2>Our Premier Rooms</h2>
+          </div>
+      </div>
+      <div class="row m-0">
+          <div class="col-md-4 mb-4 mb-lg-0">
+              <div class="sunset_resort_room_item">
+                  <img decoding="async" src="./images/rooms/room4.jpg" class="img-fluid" alt="Ocean View Suite">
+                  <div class="sunset_resort_room_item_wrap">
+                      <div class="sunset_resort_room_content">
+                          <h3 class="text-white mb-lg-5 text-decoration-underline">Ocean View Suite</h3>
+                          <p class="text-white">Experience unparalleled luxury with breathtaking ocean views and modern amenities. The Ocean View Suite offers the perfect blend of comfort and style for an unforgettable stay.</p>
+                          <p class="text-white fw-bold mt-lg-4">$320 / Per Night</p>
+                          <a class="main-btn mt-lg-5" href="#">Book now</a>
+                      </div>
+                  </div> 
+              </div> 
+          </div>
+          <div class="col-md-4 mb-4 mb-lg-0">
+            <div class="sunset_resort_room_item">
+                <img decoding="async" src="./images/rooms/room5.jpg" class="img-fluid" alt="Ocean View Suite">
+                <div class="sunset_resort_room_item_wrap">
+                    <div class="sunset_resort_room_content">
+                        <h3 class="text-white mb-lg-5 text-decoration-underline">Ocean View Suite</h3>
+                        <p class="text-white">Experience unparalleled luxury with breathtaking ocean views and modern amenities. The Ocean View Suite offers the perfect blend of comfort and style for an unforgettable stay.</p>
+                        <p class="text-white fw-bold mt-lg-4">$320 / Per Night</p>
+                        <a class="main-btn mt-lg-5" href="#">Book now</a>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+        <div class="col-md-4 mb-4 mb-lg-0">
+          <div class="sunset_resort_room_item">
+              <img decoding="async" src="./images/rooms/room6.jpg" class="img-fluid" alt="Ocean View Suite">
+              <div class="sunset_resort_room_item_wrap">
+                  <div class="sunset_resort_room_content">
+                      <h3 class="text-white mb-lg-5 text-decoration-underline">Ocean View Suite</h3>
+                      <p class="text-white">Experience unparalleled luxury with breathtaking ocean views and modern amenities. The Ocean View Suite offers the perfect blend of comfort and style for an unforgettable stay.</p>
+                      <p class="text-white fw-bold mt-lg-4">$320 / Per Night</p>
+                      <a class="main-btn mt-lg-5" href="#">Book now</a>
+                  </div>
+              </div> 
+          </div> 
+      </div>
+     
+      </div>
+  </div>
+</section>
+
+    
+     <!-- Services section -->
+<section id="services" class="sunset_resort_services_wrapper">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+              <h4>We Are Here For You</h4>
+              <h2>Our Exceptional Services</h2>
+          </div>
+      </div>
+      <div class="row align-items-center sunset_resort_service_item_wrap">
+          <div class="col-lg-7 p-lg-0 mb-lg-0 mb-5">
+              <!--Service Area Start-->
+              <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade active show" id="spa" role="tabpanel">
+                      <img decoding="async" class="img-fluid" src="images/services/spa.jpg" alt="Spa">
+                  </div>
+                  <div class="tab-pane fade" id="restaurant" role="tabpanel">
+                      <img decoding="async" class="img-fluid" src="./images/services/restaurant.jpg" alt="Restaurant">
+                  </div>
+                  <div class="tab-pane fade" id="swimming" role="tabpanel">
+                      <img decoding="async" class="img-fluid" src="./images/services/swimming.jpg" alt="Swimming Pool">
+                  </div>
+                  <div class="tab-pane fade" id="conference" role="tabpanel">
+                      <img decoding="async" class="img-fluid" src="./images/services/conferencehall.jpg" alt="Conference Hall">
+                  </div>
+              </div>
+              <!--Service Area End-->
+          </div>
+          <div class="col-lg-5 position-relative padding-top">
+              <!--Service Tab Menu Area Start-->
+              <div class="sunset_resort_service_menu_area">
+                  <ul class="nav">
+                      <li>
+                          <a data-bs-toggle="tab" href="#spa" class="active">
+                              <span class="sunset_resort_service_icon">
+                                <i class="fas fa-spa"></i>
+                              </span>
+                              <h3>Spa & Wellness</h3>
+                              <p><span>Spa and wellness</span> Unwind and rejuvenate with our luxurious spa treatments and wellness services.</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a data-bs-toggle="tab" href="#restaurant">
+                              <span class="sunset_resort_service_icon">
+                                <i class="fas fa-utensils"></i>
+                              </span>
+                              <h3>Gourmet Restaurant</h3>
+                              <p><span>Gourmet dining</span> Enjoy exquisite culinary experiences at our renowned restaurant, offering diverse and delectable dishes.</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a data-bs-toggle="tab" href="#swimming">
+                              <span class="sunset_resort_service_icon">
+                                <i class="fas fa-swimmer"></i>
+                              </span>
+                              <h3>Swimming Pool</h3>
+                              <p><span>Swimming pool</span> Dive into relaxation at our stunning swimming pool, designed for your comfort and enjoyment.</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a data-bs-toggle="tab" href="#conference">
+                              <span class="sunset_resort_service_icon">
+                                <i class="fas fa-chalkboard"></i>
+                              </span>
+                              <h3>Conference Hall</h3>
+                              <p><span>Conference facilities</span> Host successful meetings and events in our state-of-the-art conference hall, equipped with modern amenities.</p>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <!--Service Tab Menu Area End-->
+          </div>
+      </div>
+  </div>
+
+
+</section>
+<!-- counter  -->
+<div class="sunset-resort-counter mt-5">
+  <div class="container">
+      <div class="row text-center">
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+              <h3>
+                  <span id="sunset-count1"></span>+
+              </h3>
+              <p>Sunset Guests</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+              <h3>
+                  <span id="sunset-count2"></span>+
+              </h3>
+              <p>New Connections</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+              <h3>
+                  <span id="sunset-count3"></span>+
+              </h3>
+              <p>Star Ratings</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+              <h3>
+                  <span id="sunset-count4"></span>+
+              </h3>
+              <p>Delicious Breakfasts</p>
+          </div>
+      </div>
+  </div>
+</div>
+    <!-- team section  -->
+    <section id="team" class="sunset-resort-team-wrapper">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12 section-title text-center mb-5">
+                  <h4>Meet Our Team</h4>
+                  <h2>The Sunset Resort Team</h2>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card p-0 rounded-3">
+                      <img decoding="async" src="images/team/team1.jpg" class="img-fluid rounded-3" />
+                      <div class="sunset-resort-team-info">
+                          <h5>Emily Davis</h5>
+                          <p>General Manager</p>
+                          <ul class="social-network">
+                              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card p-0 rounded-3">
+                      <img decoding="async" src="images/team/team2.jpg" class="img-fluid rounded-3" />
+                      <div class="sunset-resort-team-info">
+                          <h5>Michael Johnson</h5>
+                          <p>Reception Supervisor</p>
+                          <ul class="social-network">
+                              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card p-0 rounded-3">
+                      <img decoding="async" src="images/team/team3.jpg" class="img-fluid rounded-3" />
+                      <div class="sunset-resort-team-info">
+                          <h5>Sophia Martinez</h5>
+                          <p>Executive Chef</p>
+                          <ul class="social-network">
+                              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card p-0 rounded-3">
+                      <img decoding="async" src="images/team/team4.jpg" class="img-fluid rounded-3" />
+                      <div class="sunset-resort-team-info">
+                          <h5>Olivia Brown</h5>
+                          <p>Housekeeping Lead</p>
+                          <ul class="social-network">
+                              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+    <!--gallery section  -->
+    <section id="gallery" class="sunset-gallery-wrapper">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12 section-title text-center mb-5">
+                  <h4>Discover the Beauty of Sunset Resort</h4>
+                  <h2>Our Gallery</h2>
+              </div>
+          </div>
+          <div class="row g-0">
+              <div class="col-lg-4 col-md-6 sunset-gallery-item">
+                  <img decoding="async" src="images/gallery/gallery1.jpg" class="img-fluid">
+                  <div class="sunset-gallery-item-content"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 sunset-gallery-item">
+                  <img decoding="async" src="images/gallery/gallery2.jpg" class="img-fluid w-100">
+                  <div class="sunset-gallery-item-content"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 sunset-gallery-item">
+                  <img decoding="async" src="images/gallery/gallery3.jpg" class="img-fluid w-100">
+                  <div class="sunset-gallery-item-content"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 sunset-gallery-item">
+                  <img decoding="async" src="images/gallery/gallery4.jpg" class="img-fluid w-100">
+                  <div class="sunset-gallery-item-content"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 sunset-gallery-item">
+                  <img decoding="async" src="images/gallery/gallery5.jpg" class="img-fluid w-100">
+                  <div class="sunset-gallery-item-content"> </div>
+              </div>
+              <div class="col-lg-4 col-md-6 sunset-gallery-item">
+                  <img decoding="async" src="images/gallery/gallery6.jpg" class="img-fluid w-100">
+                  <div class="sunset-gallery-item-content"> </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+<!-- pricing section  -->
+<section id="price" class="sunset-pricing-wrapper">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+              <h4>Best & Affordable Prices at Sunset Resort</h4>
+              <h2>Our Pricing</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-4 text-center rounded-3 sunset-price-card">
+                  <h3 class="text-decoration-underline mb-4">Economy Room</h3>
+                  <ul class="list-unstyled">
+                      <li>
+                          <p>Flight Ticket (2)</p>
+                      </li>
+                      <li>
+                          <p>Music Concert (30% Off)</p>
+                      </li>
+                      <li>
+                          <p>Restaurant (Snacks)</p>
+                      </li>
+                      <li>
+                          <p>Face Make (No)</p>
+                      </li>
+                  </ul>
+                  <hr />
+                  <h3 class="offer">$150<sub >/NIGHT</sub></h3>
+                  <a href="#" class="main-btn">Sign Up</a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-4 text-center rounded-3 sunset-price-card">
+                  <h3 class="text-decoration-underline mb-4">Deluxe Room</h3>
+                  <ul class="list-unstyled">
+                      <li>
+                          <p>Flight Ticket (2)</p>
+                      </li>
+                      <li>
+                          <p>Music Concert (30% Off)</p>
+                      </li>
+                      <li>
+                          <p>Restaurant (Snacks)</p>
+                      </li>
+                      <li>
+                          <p>Face Make (Yes)</p>
+                      </li>
+                  </ul>
+                  <hr />
+                  <h3 class="offer">$250<sub >/NIGHT</sub></h3>
+                  <a href="#" class="main-btn">Sign Up</a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-4 text-center rounded-3 sunset-price-card">
+                  <h3 class="text-decoration-underline mb-4">Suite</h3>
+                  <ul class="list-unstyled">
+                      <li>
+                          <p>Flight Ticket (2)</p>
+                      </li>
+                      <li>
+                          <p>Music Concert (50% Off)</p>
+                      </li>
+                      <li>
+                          <p>Restaurant (Full Meal)</p>
+                      </li>
+                      <li>
+                          <p>Face Make (Yes)</p>
+                      </li>
+                  </ul>
+                  <hr />
+                  <h3 class="offer">$350<sub >/NIGHT</sub></h3>
+                  <a href="#" class="main-btn">Sign Up</a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-4 text-center rounded-3 sunset-price-card">
+                  <h3 class="text-decoration-underline mb-4">Presidential Suite</h3>
+                  <ul class="list-unstyled">
+                      <li>
+                          <p>Flight Ticket (2)</p>
+                      </li>
+                      <li>
+                          <p>Music Concert (Free)</p>
+                      </li>
+                      <li>
+                          <p>Restaurant (Gourmet Meal)</p>
+                      </li>
+                      <li>
+                          <p>Face Make (Yes)</p>
+                      </li>
+                  </ul>
+                  <hr />
+                  <h3 class="offer">$500<sub >/NIGHT</sub></h3>
+                  <a href="#" class="main-btn">Sign Up</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- blog section  -->
+<section id="blog" class="sunset-blog-wrapper pb-0">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+              <h4>Explore Insights from Sunset Resort</h4>
+              <h2>Our Blog</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 mb-4">
+              <div class="card p-0 border-0 rounded-0 sunset-blog-card">
+                  <img decoding="async" src="images/blog/blog1.jpg" alt="Blog Post 1">
+                  <div class="sunset-blog-content bg-white p-4">
+                      <h3 class="text-decoration-underline mb-4">Relax in Style</h3>
+                      <h4>By Sunset Resort Team - September 10, 2024</h4>
+                      <p class="mt-2">Discover how Sunset Resort’s serene environment offers the perfect retreat. Explore our relaxation zones and luxurious amenities.</p>
+                      <a href="#" class="main-btn mt-2">Read More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 mb-4">
+              <div class="card p-0 border-0 rounded-0 sunset-blog-card">
+                  <img decoding="async" src="images/blog/blog2.jpg" alt="Blog Post 2">
+                  <div class="sunset-blog-content bg-white p-4">
+                      <h3 class="text-decoration-underline mb-4">Exclusive Offers</h3>
+                      <h4>By Sunset Resort Team - September 15, 2024</h4>
+                      <p class="mt-2">Discover how Sunset Resort’s serene environment offers the perfect retreat. Explore our relaxation zones and luxurious amenities.</p>
+                      <a href="#" class="main-btn mt-2">Read More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+  </div>
+</section>
+<!-- footer section  -->
+<section id="sunset-footer" class="sunset-footer-wrapper mt-3 mt-md-0 pb-0">
+  <div class="container pb-3">
+      <div class="row">
+          <div class="col-lg-3 col-md-6">
+              <h3>Our Location</h3>
+              <p class="ps-0">Experience luxury and tranquility at Sunset Resort, nestled in a picturesque location offering the best of both relaxation and adventure.</p>
+              <div class="sunset-contact-info">
+                  <ul class="list-unstyled">
+                      <li><a href="#"><i class="fa fa-home me-3"></i> No. 123, Sunset Avenue, Beachside</a></li>
+                      <li><a href="#"><i class="fa fa-phone me-3"></i>+1 555 1234</a></li>
+                      <li><a href="#"><i class="fa fa-envelope me-3"></i>info@sunsetresort.com</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h3>Useful Links</h3>
+              <ul class="sunset-link-widget p-0">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Our Location</a></li>
+                  <li><a href="#">Special Offers</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Gift Cards</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h3>Popular Topics</h3>
+              <ul class="sunset-link-widget p-0">
+                  <li><a href="#">Luxury Rooms</a></li>
+                  <li><a href="#">Dining Options</a></li>
+                  <li><a href="#">Events & Activities</a></li>
+                  <li><a href="#">Spa Services</a></li>
+                  <li><a href="#">Local Attractions</a></li>
+                  <li><a href="#">Guest Reviews</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h3>Newsletter</h3>
+              <div class="form-group mb-4">
+                  <input type="email" class="form-control bg-transparent" placeholder="Enter your email here">
+                  <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">Subscribe</button>
+              </div>
+              <h3>Follow Us</h3>
+              <ul class="sunset-social-network d-flex align-items-center p-0">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid sunset-copyright-section">
+      <p>Copyright <a href="#">© Sunset Resort.</a> All Rights Reserved</p>
+  </div>
+</section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- own js  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
